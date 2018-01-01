@@ -1,4 +1,4 @@
 .PHONY: build
 
 build:
-	docker build -t mossj/sphinx-server .
+	docker build -t moose/sphinx-server .

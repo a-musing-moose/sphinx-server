@@ -11,7 +11,7 @@ This image is based on `pardahlman/sphinx`_
 Installation
 ------------
 
-The image is publish on 'docker hub`_ named `mossj/sphinx-server`_.
+The image is publish on 'docker hub`_ named `moose/sphinx-server`_.
 
 New documentation
 -----------------
@@ -25,7 +25,7 @@ mkdir docs
 Then run the following docker command
 
 ```bash
-docker run -d  -v $PWD/docs:/docs -p 8000:8000 mossj/sphinx-server
+docker run -d  -v $PWD/docs:/docs -p 8000:8000 moose/sphinx-server
 ```
 
 This creates a docker container that mounts the `docs` directory to `/docs` (where the documentation is expected to be). Use `docker ps` to find the ID of the newly created container. Then initiate the documentation with the following command (replace `92` with the id of your container)
@@ -47,7 +47,7 @@ Open a browser and navigate to `localhost:8000`.
 Simply run
 
 ```bash
-docker run -d  -v /path/to/docs:/docs -p 8000:8000 mossj/sphinx-server
+docker run -d  -v /path/to/docs:/docs -p 8000:8000 moose/sphinx-server
 ```
 
 Open a browser and navigate to `localhost:8000`.
@@ -67,7 +67,7 @@ The image is prepared with the `read the docs theme`_. In order to use it, follo
 .. _sphinx: http://www.sphinx-doc.org/en/stable/
 .. _docker: https://www.docker.com/
 .. _`docker hub`: http://hub.docker.com/
-.. _`mossj/sphinx-server`: https://hub.docker.com/r/mossj/sphinx-server/`
+.. _`moose/sphinx-server`: https://hub.docker.com/r/moose/sphinx-server/`
 .. _`pardahlman/sphinx`: https://hub.docker.com/r/pardahlman/sphinx/
 .. _`read the docs theme`: https://github.com/rtfd/sphinx_rtd_theme
 .. _`configuration instructions`: https://github.com/rtfd/sphinx_rtd_theme#installation

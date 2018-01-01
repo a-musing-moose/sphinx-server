@@ -1,0 +1,15 @@
+*.egg-info
+*.pot
+*.py[co]
+*.sublime-*
+.cache
+.coverage
+.envrc
+.hypothesis
+.idea
+.python-version
+.tox
+.vscode
+__pycache__
+docs/_build
+docs/_build_html

@@ -11,7 +11,7 @@ This image is based on `pardahlman/sphinx`_
 Installation
 ------------
 
-The image is publish on 'docker hub`_ named [`mossj/sphinx-server`](https://hub.docker.com/r/mossj/sphinx-server/).
+The image is publish on 'docker hub`_ named `mossj/sphinx-server`_.
 
 New documentation
 -----------------
@@ -67,6 +67,7 @@ The image is prepared with the `read the docs theme`_. In order to use it, follo
 .. _sphinx: http://www.sphinx-doc.org/en/stable/
 .. _docker: https://www.docker.com/
 .. _`docker hub`: http://hub.docker.com/
+.. _`mossj/sphinx-server`: https://hub.docker.com/r/mossj/sphinx-server/`
 .. _`pardahlman/sphinx`: https://hub.docker.com/r/pardahlman/sphinx/
 .. _`read the docs theme`: https://github.com/rtfd/sphinx_rtd_theme
 .. _`configuration instructions`: https://github.com/rtfd/sphinx_rtd_theme#installation

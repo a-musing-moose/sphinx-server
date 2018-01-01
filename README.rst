@@ -1,7 +1,7 @@
 Sphinx docs in Docker
 =====================
 
-Sphinx_ is a tool that makes it easy to create intelligent and beautiful documentation. This image helps you get started with sphinx without installing any dependencies on your computer. The only prerequirement is Docker_.
+Sphinx_ is a tool that makes it easy to create intelligent and beautiful documentation. This image helps you get started with sphinx without installing any dependencies on your computer. The only prerequirement is Docker_. It allows you to build and server documentation automatically using a mapped volume.
 
 Credits
 -------

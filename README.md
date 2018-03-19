@@ -53,7 +53,5 @@ Open a browser and navigate to `localhost:8000`.
 The image is prepared with the [read the docs theme](https://github.com/rtfd/sphinx_rtd_theme). In order to use it, follow the [configuration instructions](https://github.com/rtfd/sphinx_rtd_theme#installation)
 
 ```py
-import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 ```

@@ -1,4 +1,4 @@
-FROM python:3.6-alpine
+FROM python:3.7-alpine
 RUN pip install sphinx sphinx-autobuild recommonmark sphinx_rtd_theme
 COPY bootstrap.sh /bootstrap.sh
 CMD mkdir /docs

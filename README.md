@@ -55,3 +55,5 @@ The image is prepared with the [read the docs theme](https://github.com/rtfd/sph
 ```py
 html_theme = "sphinx_rtd_theme"
 ```
+
+TODO: Add info about getting Autodocs working

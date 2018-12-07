@@ -14,4 +14,4 @@ if [ ! -f ./conf.py ]; then
     echo " - Run sphinx-quickstart to create a new set of documentation"
     tail -F /dev/null
 fi
-sphinx-autobuild . _build_html -H 0.0.0.0 --poll
+exec sphinx-autobuild . _build_html -H 0.0.0.0 --poll

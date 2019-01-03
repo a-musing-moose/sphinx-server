@@ -2,8 +2,20 @@
 set -e
 source /venv/bin/activate
 
+if [[ ! -z "${EXTRA_APK}" ]]; then
+    echo "Ensuring extra alpine packages are installed: ${EXTRA_APK}"
+    apk add --no-cache ${EXTRA_APK}
+fi
+
+if [[ ! -z "${EXTRA_EDGE_APK}" ]]; then
+    echo "Ensuring extra alpine packages are installed: ${EXTRA_EDGE_APK}"
+    apk add --no-cache \
+        --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
+        --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+        ${EXTRA_EDGE_APK}
+fi
+
 if [[ ! -z "${EXTRA_PACKAGES}" ]]; then
-    echo "${EXTRA_PACKAGES}"
     echo "Ensuring extra packages are installed: ${EXTRA_PACKAGES}"
     pip install ${EXTRA_PACKAGES}
 fi

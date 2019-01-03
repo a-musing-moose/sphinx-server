@@ -1,5 +1,6 @@
-FROM python:3.7-alpine
-RUN python3 -m venv /venv \
+FROM python:3.7.2-alpine3.8
+RUN apk add --no-cache git build-base \
+    && python3 -m venv /venv \
     && /venv/bin/pip install -U pip \
     && /venv/bin/pip install \
         sphinx==1.8.2 \
@@ -10,4 +11,4 @@ RUN mkdir /docs
 WORKDIR /docs
 EXPOSE 8000
 STOPSIGNAL SIGINT
-ENTRYPOINT ["/bootstrap.sh"]
+CMD ["/bootstrap.sh"]

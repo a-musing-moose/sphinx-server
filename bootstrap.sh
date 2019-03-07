@@ -17,6 +17,7 @@ fi
 
 if [[ ! -z "${EXTRA_PACKAGES}" ]]; then
     echo "Ensuring extra packages are installed: ${EXTRA_PACKAGES}"
+    pip install -U pip
     pip install ${EXTRA_PACKAGES}
 fi
 
